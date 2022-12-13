@@ -10,5 +10,27 @@
         <br></b><a href=file:///C:/Users/mkond/OneDrive/Desktop/Swimming-analytics/User%20info.html?fname=&lname=&age=>
             <button> Previous </button>
 
+        <script>
+            const queryString = window.location.search;
+            console.log(queryString);
+
+            const urlParams = new URLSearchParams(queryString);
+
+            const fname = urlParams.get("fname")
+            console.log(fname);
+            const lname = urlParams.get("lname")
+            console.log(lname);
+            const age = urlParams.get("age")
+            console.log(age);
+            const state = urlParams.get("state")
+            console.log(state);
+            const race = urlParams.get("race")
+            console.log(race);
+            const time = urlParams.get("time")
+            console.log(time);
+            const distance = urlParams.get("distance")
+            console.log(distance);
+        </script>
+
     </body>
 </html>

@@ -10,16 +10,41 @@
 
         <form action="Swimming analytics.html">
 
-            <br><label for="race">Race:</label><br>
-            <input type="text" id="race" name="race"><br>
-            <br><label for="time">Time:</label><br>
-            <input type="number" id="time" name="time"><br>
-            <br><label for="distance">SCY or LCM:</label><br>
-            <input type="text" id="distance" name="distance"><br>
+          <input type="hidden" id="fname" name="fname" value=fname>
+          <input type="hidden" id="lname" name="lname" value=lname>
+          <input type="hidden" id="age" name="age" value=age>
+          <input type="hidden" id="state" name="state" value=state>
 
-            <br><input type="submit" value="Submit" href="file:///C:/Users/mkond/OneDrive/Desktop/Swimming-analytics/Swimming%20analytics.html" />
+          <br><label for="race">Race:</label><br>
+          <input type="text" id="race" name="race"><br>
+          <br><label for="time">Time:</label><br>
+          <input type="number" id="time" name="time"><br>
+          <br><label for="distance">SCY or LCM:</label><br>
+          <input type="text" id="distance" name="distance"><br>
+
+          <br><input type="submit" value="Submit" href="file:///C:/Users/mkond/OneDrive/Desktop/Swimming-analytics/Swimming%20analytics.html" />
 
           </form>
+
+          <script>
+            const queryString = window.location.search;
+            console.log(queryString);
+
+            const urlParams = new URLSearchParams(queryString);
+
+            const fname = urlParams.get("fname")
+            console.log(fname);
+            document.getElementById('fname').value = fname;
+            const lname = urlParams.get("lname")
+            console.log(lname);
+            document.getElementById('lname').value = lname;
+            const age = urlParams.get("age")
+            console.log(age);
+            document.getElementById('age').value = age;
+            const state = urlParams.get("state")
+            console.log(state);
+            document.getElementById('state').value = state;
+          </script>
 
     </body>
 </html>
