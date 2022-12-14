@@ -24,12 +24,33 @@
             console.log(age);
             const state = urlParams.get("state")
             console.log(state);
-            const race = urlParams.get("race")
-            console.log(race);
-            const time = urlParams.get("time")
-            console.log(time);
             const distance = urlParams.get("distance")
             console.log(distance);
+            const stroke = urlParams.get("stroke")
+            console.log(stroke);
+            const time = urlParams.get("time")
+            console.log(time);
+            const pool = urlParams.get("pool")
+            console.log(pool);
+
+            if(distance == "100"){
+                if(stroke == "fly"){
+                    newTime = time * 1.11 + 1.4
+                    console.log(newTime);
+                }
+                else if(stroke == "back"){
+                    newTime = time * 1.11 + 1.2
+                    console.log(newTime);
+                }
+                else if(stroke == "breast"){
+                    newTime = time * 1.11 + 2.0
+                    console.log(newTime);
+                }
+                else if(stroke == "free"){
+                    newTime = time * 1.11 + 1.6
+                    console.log(newTime);
+                }
+            }
         </script>
 
     </body>
