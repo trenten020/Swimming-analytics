@@ -33,24 +33,84 @@
             const pool = urlParams.get("pool")
             console.log(pool);
 
-            if(distance == "100"){
-                if(stroke == "fly"){
-                    newTime = time * 1.11 + 1.4
-                    console.log(newTime);
+            if(pool == "SCY"){
+                if(distance == "50"){
+                    if(stroke == "free"){
+                        newTime = time * 1.11 + 0.80
+                        console.log(newTime);
+                    }
                 }
-                else if(stroke == "back"){
-                    newTime = time * 1.11 + 1.2
-                    console.log(newTime);
+                else if(distance == "100"){
+                    if(stroke == "fly"){
+                        newTime = time * 1.11 + 1.4
+                        console.log(newTime);
+                    }
+                    else if(stroke == "back"){
+                        newTime = time * 1.11 + 1.2
+                        console.log(newTime);
+                    }   
+                    else if(stroke == "breast"){
+                        newTime = time * 1.11 + 2.0
+                        console.log(newTime);
+                    }
+                    else if(stroke == "free"){
+                        newTime = time * 1.11 + 1.6
+                        console.log(newTime);
+                    }
                 }
-                else if(stroke == "breast"){
-                    newTime = time * 1.11 + 2.0
-                    console.log(newTime);
+                else if(distance == "200"){
+                    if(stroke == "fly"){
+                        newTime = time * 1.11 + 2.8
+                        console.log(newTime);
+                    }
+                    else if(stroke == "back"){
+                        newTime = time * 1.11 + 2.4
+                        console.log(newTime);
+                    }   
+                    else if(stroke == "breast"){
+                        newTime = time * 1.11 + 4.0
+                        console.log(newTime);
+                    }
+                    else if(stroke == "free"){
+                        newTime = time * 1.11 + 3.2
+                        console.log(newTime);
+                    }
                 }
-                else if(stroke == "free"){
-                    newTime = time * 1.11 + 1.6
-                    console.log(newTime);
+                else if(distance == "500"){
+                    if(stroke == "free"){
+                        newTime = time * 0.8925 + 6.4
+                        console.log(newTime);
+                    }
                 }
             }
+
+            else if(pool == "LCM"){
+                if(distance == "50"){
+                    if(stroke == "free"){
+                        newTime = (time - 0.80) / 1.11
+                        console.log(newTime);
+                    }
+                }
+                else if(distance ==  "100"){
+                    if(stroke == "fly"){
+                        newTime = (time - 1.4) / 1.11
+                        console.log(newTime);
+                    }
+                    else if(stroke == "back"){
+                        newTime = (time - 1.2) / 1.11
+                        console.log(newTime);
+                    }
+                    else if(stroke == "breast"){
+                        newTime = (time - 2.0) / 1.11
+                        console.log(newTime);
+                    }
+                    else if(stroke == "free"){
+                        newTime = (time - 1.6) / 1.11
+                        console.log(newTime);
+                    }
+                }
+            }
+
         </script>
 
     </body>
