@@ -32,16 +32,112 @@
 
             var hms = time;
             var a = hms.split(':');
-            var sec = (+a[0]) * 60 + (+a[1]); 
+            var sec = (+a[0]) * 60 + (+a[1]);
+
+            //sectionals
+            if(stroke == "free"){
+                if(distance == 50){
+                    if(sec <= 21.69){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 100){
+                    if(sec <= 47.39){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 200){
+                    if(sec <= 103.79){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 500){
+                    if(sec <= 282.79){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 1000){
+                    if(sec <= 582.99){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 1650){
+                    if(sec <= 984.39){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+            }
+            else if(stroke == "back"){
+                if(distance == 100){
+                    if(sec <= 53.39){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 200){
+                    if(sec <= 114.89){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+            }
+            else if(stroke == "breast"){
+                if(distance == 100){
+                    if(sec <= 59.79){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 200){
+                    if(sec <= 129.69){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+            }
+            else if(stroke == "fly"){
+                if(distance == 100){
+                    if(sec <= 52.09){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+                if(distance == 200){
+                    if(sec <= 115.09){
+                        document.write("You qualified for Speedo Sectionals");
+                        document.write("<br>");
+                        document.write("Your next qualifying meet is Futures Championships");
+                    }
+                }
+            }
+            document.write("<br>");
+
 
             if(pool == "SCY"){
-                if(distance == "50"){
+                if(distance == 50){
                     if(stroke == "free"){
                         newTime = sec * 1.11 + 0.80
                         console.log(newTime);
                     }
                 }
-                else if(distance == "100"){
+                else if(distance == 100){
                     if(stroke == "fly"){
                         newTime = sec * 1.11 + 1.4
                         console.log(newTime);
@@ -59,7 +155,7 @@
                         console.log(newTime);
                     }
                 }
-                else if(distance == "200"){
+                else if(distance == 200){
                     if(stroke == "fly"){
                         newTime = sec * 1.11 + 2.8
                         console.log(newTime);
@@ -77,19 +173,19 @@
                         console.log(newTime);
                     }
                 }
-                else if(distance == "500"){
+                else if(distance == 500){
                     if(stroke == "free"){
                         newTime = sec * 0.8925 + 6.4
                         console.log(newTime);
                     }
                 }
-                else if(distance == "1000"){
+                else if(distance == 1000){
                     if(stroke == "free"){
                         newTime = sec * 0.8925 + 12.8
                         console.log(newTime);
                     }
                 }
-                else if(distance == "1650"){
+                else if(distance == 1650){
                     if(stroke == "free"){
                         newTime = sec * 0.8925 + 24.0
                         console.log(newTime);
@@ -98,13 +194,13 @@
             }
 
             else if(pool == "LCM"){
-                if(distance == "50"){
+                if(distance == 50){
                     if(stroke == "free"){
                         newTime = (sec - 0.80) / 1.11
                         console.log(newTime);
                     }
                 }
-                else if(distance ==  "100"){
+                else if(distance ==  100){
                     if(stroke == "fly"){
                         newTime = (sec - 1.4) / 1.11
                         console.log(newTime);
@@ -122,7 +218,7 @@
                         console.log(newTime);
                     }
                 }
-                else if(distance ==  "200"){
+                else if(distance ==  200){
                     if(stroke == "fly"){
                         newTime = (sec - 2.8) / 1.11
                         console.log(newTime);
@@ -140,19 +236,19 @@
                         console.log(newTime);
                     }
                 }
-                else if(distance == "500"){
+                else if(distance == 500){
                     if(stroke == "free"){
                         newTime = (sec - 6.4) / 0.8925 
                         console.log(newTime);
                     }
                 }
-                else if(distance == "1000"){
+                else if(distance == 1000){
                     if(stroke == "free"){
                         newTime = (sec - 12.8) / 0.8925
                         console.log(newTime);
                     }
                 }
-                else if(distance == "1650"){
+                else if(distance == 1650){
                     if(stroke == "free"){
                         newTime = (sec - 24.0) / 0.8925
                         console.log(newTime);
@@ -168,9 +264,10 @@
             finalTime += ":" + (min < 10 ? "0" + min : min);
             finalTime += ":" + (secondsLeft< 10 ? "0" + secondsLeft : secondsLeft);
             console.log(finalTime);
-
-            document.write("Your time converted is " + finalTime);
             
+            document.write("<br>");
+            document.write("Your time converted is " + finalTime);
+
         </script>
 
         <br><br></b><a href=file:///C:/Users/mkond/OneDrive/Desktop/Swimming-analytics/User%20info.html?fname=&lname=&age=>
